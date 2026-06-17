@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internship Confirmation Form</title>
+    </head>
+    <body>
+        <h1>Internship Confirmation Form</h1>
+ <h1 align="left"> Registration Form </h1>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="name">Student Name:</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email Address:</label></td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Preferred Internship Type:</td>
+                    <td><input type="radio" id="Onsite" name="internshipType" value="On-site">
+                        <label for="Onsite">On-Site</label> <br>
+                        <input type="radio" id="Remote" name="internshipType" value="Remote">
+                        <label for="Remote">Remote</label> <br>              
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Duration">Internship Duration</label></td>
+                    <td>
+                        <select id="Duration" name="Duration">
+                            <option value="6 weeks">6 weeks</option>
+                            <option value="3 months">3 months</option>
+                        </select><br><br>                    
+                    </td>
+                </tr>
+            <tr>   
+            <td>Skills of Interest:</td>
+            <td>
+            <input type="checkbox" id="web_dev" name="skills" value="Web Development">
+            <label for="web_dev">Web Development</label><br>
+
+            <input type="checkbox" id="data_analysis" name="skills" value="Data Analysis">
+            <label for="data_analysis">Data Analysis</label><br>
+
+            <input type="checkbox" id="mobile_apps" name="skills" value="Mobile Apps">
+            <label for="mobile_apps">Mobile Apps</label   ><br><br>
+            </td>
+            </tr> 
+        <tr>   
+            <td colspan="2">
+            <button type="submit">Submit</button>
+            </td>
+         </tr>
+              </table>
+        </form>
+    </body>
+</html>
