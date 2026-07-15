@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>My Portfolio</h2>
+
+<div id="nav">
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('about me')">About me</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('contact')">Contact</button>
+    <button onclick="toggleTheme()">Theme</button>
+</div>
+
+<p id="greeting"></p>
+
+  <div id="home" class="section">
+    <h1>Hi, I am Anonna S. Prottasha.</h1>
+    <p>Welcome to my site.I enjoy building practical, user-friendly applications and exploring technologies that solve real-world problems. My interests include web development, artificial intelligence, machine learning and software engineering. I'm always eager to learn new skills, collaborate on exciting projects and turn ideas into meaningful solutions.
+    My motto is, "Learning, Building, and Growing Every Day."
+    </p>
+  </div>
+
+  <div id="about me" class="section">
+    <h1>About Me</h1>
+    <p>I'm a Computer Science and Engineering student at the American International University-Bangladesh (AIUB).
+
+I'm passionate about technology and enjoy working on projects involving web development, programming, and AI. I believe every project is an opportunity to improve my problem-solving skills and creativity.
+
+My goal is to become a skilled software engineer while continuously learning modern technologies and contributing to impactful projects.
+
+Skills:
+.HTML
+.CSS
+.JavaScript
+.C#
+.Python
+.SQL
+.Git & GitHub
+.Problem Solving
+.Teamwork</p>
+  </div>
+
+  <div id="projects" class="section">
+    <h1>My Projects</h1>
+    <p>1. Interactive Portfolio Website</p>
+    <p>2. AI Research Project</p>
+    <p>3. OpenGL Graphics Projects</p>
+    <p>4. Database Management System</p>
+  </div>
+
+  <div id="contact" class="section">
+    <h1>Contact Me</h1>
+
+    <form onsubmit="return validateForm()">
+      Name: <br>
+      <input type="text" id="name"><br>
+      <span id="nameError" class="error"></span><br>
+
+      Email: <br>
+      <input type="text" id="email"><br>
+      <span id="emailError" class="error"></span><br>
+
+      Message: <br>
+      <textarea id="message" rows="2"></textarea><br>
+      <span id="messageError" class="error"></span><br>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <p id="successMsg" class="success"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

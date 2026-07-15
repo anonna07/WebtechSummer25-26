@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Attendance Calculator</h1>
+        <label>
+            Total classes
+            <input type="number" id="total" min="1" placeholder="Enter total classes">
+        </label>
+        <label>
+            Classes attended
+            <input type="number" id="attended" min="0" placeholder="Enter attended classes">
+        </label>
+        <button id="calculate">Calculate</button>
+        <p>Attendance: <span id="percentage">-</span></p>
+        <p>Status: <span id="status">-</span></p>
+        <p class="note">Minimum required: 80%</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

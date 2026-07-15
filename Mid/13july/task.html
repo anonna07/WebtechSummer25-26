@@ -1,0 +1,75 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form Validation</title>
+</head>
+<body>
+
+<h2>Contact Form</h2>
+
+<label for="name">Name:</label><br>
+<input type="text" id="name"><br><br>
+
+<label for="email">Email:</label><br>
+<input type="text" id="email"><br><br>
+
+<label for="message">Message:</label><br>
+<textarea id="message" rows="5" cols="30"></textarea><br><br>
+
+<button onclick="validateForm()">Register</button>
+
+<p id="result"></p>
+
+<script>
+
+function validateForm() {
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    var error = "";
+
+    if (name == "") {
+        error += "Name is required.<br>";
+    }
+
+    if (name != "" && name.length < 3) {
+        error += "Name must be at least 3 characters.<br>";
+    }
+
+    if (/\d/.test(name)) {
+        error += "Name cannot contain numbers.<br>";
+    }
+
+    if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+        error += "Enter a valid email address.<br>";
+    }
+
+    if (email != "" && !email.endsWith(".com")) {
+        error += "Email must end with .com.<br>";
+    }
+
+    if (message.length < 10) {
+        error += "Message must contain at least 10 characters.<br>";
+    }
+
+    if (error != "") {
+        document.getElementById("result").innerHTML = error;
+    }
+    else {
+        document.getElementById("result").innerHTML =
+        "<h3>Registration Successful!</h3>" +
+        "Name: " + name + "<br>" +
+        "Email: " + email + "<br>" +
+        "Message: " + message;
+    }
+
+}
+
+</script>
+
+</body>
+</html>
+```

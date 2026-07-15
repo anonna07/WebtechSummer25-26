@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 100px;
+    }       
+    #switchbtn {
+        padding: 10px 20px;
+    }
+</style>
+<body>
+
+    <h1 id="pageTitle"> light mode </h1> 
+    <button id="switchbtn" onclick="toggleMode()">Switch Mode</button>
+
+    <script>
+        function toggleMode() {
+            var body = document.body;
+            var Title = document.getElementById("pageTitle");
+            var switchbtn = document.getElementById("switchbtn");
+
+//now manipulation korbo, switch to light mode
+
+            if (body.style.backgroundColor === "black") {
+                body.style.backgroundColor = "white";
+                body.style.color = "black";
+                Title.innerHTML = "light mode";
+                switchbtn.innerHTML = "Switch to light Mode";
+            } else {
+                body.style.backgroundColor = "black";
+                body.style.color = "white";
+                Title.innerHTML = "dark mode";
+                switchbtn.innerHTML = "Switch to dark Mode";
+            }
+        }        
+    </script>
+    <h2>Welcome to DOM Manipulation</h2>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: white;
+    color: black;
+}
+
+#nav {
+    margin: 20px;
+}
+
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.section {
+    display: none;
+    margin: 20px;
+}
+
+input,
+textarea {
+    width: 250px;
+    padding: 5px;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.dark {
+    background: black;
+    color: white;
+}
